@@ -9,22 +9,32 @@
     <script src="js/uikit-icons.min.js"></script>
   </head>
   <body>
-    <ul class="uk-nav">
-      <li><a href="#">hello</a></li>
-      <li class="uk-active"><a href="#">hello</a></li>
-    </ul>
-  </body>
+    <div class="sidenav">
+        <ul>
+            <li><a href="#">John Doe</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Appointments</a></li>
+        <ul>
+    </div>
+      
+    <div class="main">
+        <img src="prescriptionpage.jpg" width="500" height="600">
+    </div>
 
-  <div class="sidenav">
-    <ul>
-    <li><a href="#">John Doe</a></li>
-    <li><a href="#">Profile</a></li>
-    <li><a href="#">Appointments</a></li>
-    <ul>
-  </div>
-  
-  <div class="main">
-    <img src="prescriptionpage.jpg" width="500" height="600">
-    
-  </div>
+    <div class="functions">
+        <button type="button">Print PDF</button>
+        <button type="button">Create New Prescription</button>
+        <button type="button">Close</button>
+    </div>
+
+    <div class="notes">
+        <form action="/action_page.php">
+            <label for="fname">Additional Notes:</label>
+            <input type="text" id="fname" name="Additional Notes"><br><br>
+         </form>
+    </div>
+
+
+    <canvas width="600" height="400"></canvas>
+  </body>
 </html>
