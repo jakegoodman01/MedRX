@@ -60,12 +60,10 @@
   color: white;
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidenav div:hover {
   opacity: 1;
 }
 
-/* Style page content */
 .main {
   margin-left: 160px; /* Same as the width of the sidebar */
   padding: 0px 10px;
