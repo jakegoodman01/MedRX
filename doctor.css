@@ -1,7 +1,7 @@
 .sidenav {
   height: 100%;
   width: 600px;
-  position: relative;
+  position: fixed;
 
   z-index: 1;
   top: 0;
@@ -19,15 +19,38 @@
 
 .nav-profile {
   height: 40%;
+  margin-bottom: 200px;
 }
 
 .nav-profile img {
+  position: relative;
   display: block;
   margin: auto;
   padding-top: 30%;
 }
 
+.nav-profile h1 {
+  text-align: center;
+  color: white;
+  font-size: 80px;
+}
+
 .nav-buttons {
+  position: relative;
+}
+
+.button {
+  align-self: center;
+  text-align: center;
+  font-size: 40px;
+  background-color: purple;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.hor {
+  display: inline-block;
 }
 
 /* When you mouse over the navigation links, change their color */
