@@ -45,18 +45,59 @@
       </div>
     </div>
     
-    <div class="main">
 
-    <div class="searchbar"></div>
+    
+    <div class="main">
       <form>
           <label for="search1">Search by Indication:</label><br>
           <input type="text" id="search1" name="search1">
-          <button type="button">Search</button>
+          <button type="button" id="check" value="Button1" onclick="myFunction()" >Search</button>
           <blockquote></blockquote>
           <label for="serach2">Search by Medication:</label><br>
           <input type="text" id="search2" name="search">
           <button type="button">Search</button>
       </form>
+
+      <blockquote></blockquote><br>
+      
+      <h2 id="sampletext">Drug Recommendation</h2>
+      <div id="displaytable" class="placeholder">
+        <table id="displaytablee">
+          <tr align="center">
+            <td class="lbl">Proton-Pump Inhibitors (PPI)</td>
+            <td class="lbl"><button type="button" id="select">Show Drugs</button></td>
+        </table>
+      </div>
+      <br>
+      <h2 id="sampletext2">Alternatives</h2>
+      <div id="displaytable2" class="placeholder">
+        <table id="displaytablee2">
+          <tr align="center">
+            <td class="lbl">H2 Receptor Antagonists (H2RA)</td>
+            <td class="lbl"><button type="button" id="select">Show Drugs</button></td>
+        </table>
+      </div>
+
+
+      <script>
+          var click = document.getElementById('check');
+          click.addEventListener('click', myfunction);
+
+          function myfunction() {
+            var headertext = document.getElementById('sampletext')
+            headertext.classList.toggle('hidden')
+
+            var tablewrap = document.getElementById('displaytable');
+            tablewrap.classList.toggle('hidden')
+
+            var headertext2 = document.getElementById('sampletext2')
+            headertext2.classList.toggle('hidden')
+            
+            var tablewrap2 = document.getElementById('displaytable2');
+            tablewrap2.classList.toggle('hidden')
+          };
+      </script>
+      </div>
   </div>
   </body>
 </html>
