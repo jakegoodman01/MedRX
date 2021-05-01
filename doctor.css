@@ -64,4 +64,31 @@
   opacity: 1;
 }
 
+.main {
+  margin-left: 160px; 
+  padding: 0px 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
+.hidden {
+  display: none;
+}
+
+.placeholder {
+
+}
+#displaytable {
+  padding: 20px;
+  width: 35%;
+  border: 6px solid rgb(58, 224, 58);
+  font-size: 22px;
+}
+#displaytable2 {
+  padding: 20px;
+  width: 35%;
+  border: 6px solid rgb(249, 252, 63);
+  font-size: 22px;
+}
