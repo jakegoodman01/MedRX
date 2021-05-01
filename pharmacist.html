@@ -4,36 +4,55 @@
     <title>Title</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="pharmacist.css" />
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="doctor.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
   </head>
   <body>
-    <div class="sidenav">
-        <ul>
-            <li><a href="#">John Doe</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Appointments</a></li>
-        <ul>
-    </div>
-      
-    <div class="main">
-        <img src="prescriptionpage.jpg" width="500" height="600">
-    </div>
+    <div>
+      <div class="sidenav">
+        <div class="nav-profile">
+          <img src="pharm.png" />
+          <h1>Pharmacist</h1>
+        </div>
+        <div class="nav-buttons">
+          <!--
+          <ul>
+            <li><i class="fa fa-user"></i><a href="#">Patient</a></li>
+            <li><i class="fa fa-pencil"></i><a href="#">Perscribe</a></li>
+            <li>
+              <i class="fa fa-sticky-note"></i><a href="#">Documentation</a>
+            </li>
+          </ul>
 
-    <div class="functions">
-        <button type="button">Print PDF</button>
-        <button type="button">Create New Prescription</button>
-        <button type="button">Close</button>
-    </div>
+          <!--
+            <div class="button">
+                <div class="hor">
+                    <i class="fa fa-car"></i>
+                    <p>Patient</p>
+                </div>
+            </div>
+            <div class="button">Perscribe</div>
+            <div class="button">Documentation</div>
+            -->
+          <div class="button">
+            <i class="fa fa-user"></i><a href="#">Patient</a>
+          </div>
 
-    <div class="notes">
-        <form action="/action_page.php">
-            <label for="fname">Additional Notes:</label>
-            <input type="text" id="fname" name="Additional Notes"><br><br>
-         </form>
-    </div>
+          <div class="button">
+            <i class="fa fa-pencil"></i><a href="#">Perscribe</a>
+          </div>
 
-    <canvas width="600" height="400"></canvas>
+          <div class="button">
+            <i class="fa fa-sticky-note"></i><a href="#">Documentation</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
