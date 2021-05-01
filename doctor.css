@@ -37,20 +37,26 @@
 
 .nav-buttons {
   position: relative;
+  margin-bottom: 15px;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  font-size: 40px;
+  text-align: center;
+  align-self: center;
 }
 
 .button {
-  align-self: center;
-  text-align: center;
-  font-size: 40px;
+  margin: 20px;
+  padding: 20px;
   background-color: purple;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
-  padding-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.hor {
-  display: inline-block;
+.button a {
+  color: white;
 }
 
 /* When you mouse over the navigation links, change their color */
