@@ -22,82 +22,101 @@
         </div>
         <div class="nav-buttons">
           <div class="nav-buttons">
-          <div class="button">
-            <i class="fa fa-user"></i
-            ><a href="patient/index.html" style="padding-left: 150px">Patient</a>
-          </div>
+            <div class="button">
+              <i class="fa fa-user"></i
+              ><a href="patient/index.html" style="padding-left: 150px"
+                >Patient</a
+              >
+            </div>
 
-          <div class="button">
-            <i class="fa fa-history"></i
-            ><a href="history/index.html" style="padding-left: 60px">Medication History</a>
-          </div>
+            <div class="button">
+              <i class="fa fa-history"></i
+              ><a href="history/index.html" style="padding-left: 60px"
+                >Medication History</a
+              >
+            </div>
 
-          <div class="button">
-            <i class="fa fa-pencil"></i
-            ><a href="" style="padding-left: 127px">Prescribe</a>
-          </div>
+            <div class="button">
+              <i class="fa fa-pencil"></i
+              ><a href="" style="padding-left: 127px">Prescribe</a>
+            </div>
 
-          <div class="button">
-            <i class="fa fa-sticky-note"></i
-            ><a href="docu/index.html" style="padding-left: 75px">Documentation</a>
+            <div class="button">
+              <i class="fa fa-sticky-note"></i
+              ><a href="docu/index.html" style="padding-left: 75px"
+                >Documentation</a
+              >
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    
 
-    
-    <div class="main">
-      <form>
-          <label for="search1">Search by Indication:</label><br>
-          <input type="text" id="search1" name="search1">
-          <button type="button" id="check" value="Button1" onclick="myFunction()" >Search</button>
+      <div class="main">
+        <form>
+          <label for="search1">Search by Indication:</label><br />
+          <input type="text" id="search1" name="search1" />
+          <button
+            type="button"
+            id="check"
+            value="Button1"
+            onclick="myFunction()"
+          >
+            Search
+          </button>
           <blockquote></blockquote>
-          <label for="serach2">Search by Medication:</label><br>
-          <input type="text" id="search2" name="search">
+          <label for="serach2">Search by Medication:</label><br />
+          <input type="text" id="search2" name="search" />
           <button type="button">Search</button>
-      </form>
+        </form>
 
-      <blockquote></blockquote><br>
-      
-      <h2 id="sampletext">Drug Recommendation</h2>
-      <div id="displaytable" class="placeholder">
-        <table id="displaytablee">
-          <tr align="center">
-            <td class="lbl">Proton-Pump Inhibitors (PPI)</td>
-            <td class="lbl"><button type="button" id="select">Show Drugs</button></td>
-        </table>
-      </div>
-      <br>
+        <blockquote></blockquote>
+        <br />
 
-      <h2 id="sampletext2">Alternatives</h2>
-      <div id="displaytable2" class="placeholder">
-        <table id="displaytablee2">
-          <tr align="center">
-            <td class="lbl">H2 Receptor Antagonists (H2RA)</td>
-            <td class="lbl"><button type="button" id="select">Show Drugs</button></td>
-        </table>
-      </div>
+        <h2 id="sampletext">Drug Recommendation</h2>
+        <div id="displaytable" class="placeholder">
+          <table id="displaytablee">
+            <tr align="center">
+              <td class="lbl">Proton-Pump Inhibitors (PPI)</td>
+              <td class="lbl">
+                <button type="button" id="select">Show Drugs</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <br />
 
-      <script>
-          var click = document.getElementById('check');
-          click.addEventListener('click', myfunction);
+        <h2 id="sampletext2">Alternatives</h2>
+        <div id="displaytable2" class="placeholder">
+          <table id="displaytablee2">
+            <tr align="center">
+              <td class="lbl">H2 Receptor Antagonists (H2RA)</td>
+              <td class="lbl">
+                <button type="button" id="select">Show Drugs</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <script>
+          var click = document.getElementById("check");
+          click.addEventListener("click", myfunction);
 
           function myfunction() {
-            var headertext = document.getElementById('sampletext')
-            headertext.classList.toggle('hidden')
+            var headertext = document.getElementById("sampletext");
+            headertext.classList.toggle("hidden");
 
-            var tablewrap = document.getElementById('displaytable');
-            tablewrap.classList.toggle('hidden')
+            var tablewrap = document.getElementById("displaytable");
+            tablewrap.classList.toggle("hidden");
 
-            var headertext2 = document.getElementById('sampletext2')
-            headertext2.classList.toggle('hidden')
-            
-            var tablewrap2 = document.getElementById('displaytable2');
-            tablewrap2.classList.toggle('hidden')
-          };
-      </script>
+            var headertext2 = document.getElementById("sampletext2");
+            headertext2.classList.toggle("hidden");
+
+            var tablewrap2 = document.getElementById("displaytable2");
+            tablewrap2.classList.toggle("hidden");
+          }
+          window.onload = myFunction();
+        </script>
       </div>
-  </div>
+    </div>
   </body>
 </html>

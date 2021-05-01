@@ -65,12 +65,14 @@
 }
 
 .main {
-  margin-left: 160px; 
-  padding: 0px 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  margin-top: 100px;
+  margin-left: 680px;
+  padding: 50px;
+  height: 800px;
+  width: 1130px;
+  border-style: solid;
+  border-color: black;
+  background: rgb(200, 233, 240);
 }
 
 .hidden {
@@ -78,13 +80,13 @@
 }
 
 .placeholder {
-
 }
 #displaytable {
   padding: 20px;
   width: 35%;
   border: 6px solid rgb(58, 224, 58);
   font-size: 22px;
+  background: white;
 }
 #displaytable2 {
   padding: 20px;
