@@ -1,0 +1,66 @@
+.sidenav {
+    height: 100%;
+    width: 600px;
+    position: fixed;
+  
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: lightgray;
+    overflow-x: hidden;
+    padding-top: 20px;
+  
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+  }
+  
+  .nav-profile {
+    height: 40%;
+    margin-bottom: 140px;
+  }
+  
+  .nav-profile img {
+    position: relative;
+    display: block;
+    margin: auto;
+    padding-top: 30%;
+  }
+  
+  .nav-profile h1 {
+    text-align: center;
+    color: black;
+    font-size: 80px;
+  }
+  
+  .nav-buttons {
+    position: relative;
+    margin-bottom: 15px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 40px;
+    text-align: center;
+    align-self: center;
+  }
+  
+  .button {
+    margin: 20px;
+    padding: 20px;
+    padding-left: 70px;
+    background-color: rgb(61, 183, 223);
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+  }
+  
+  .button a {
+    color: white;
+  }
+  
+  .sidenav div:hover {
+    opacity: 1;
+  }
+  
