@@ -70,7 +70,6 @@
         </form>
 
         <blockquote></blockquote>
-        <br />
 
         <h2 id="sampletext">Drug Recommendation</h2>
         <div id="displaytable" class="placeholder">
@@ -79,13 +78,12 @@
               <td class="lbl">Proton-Pump Inhibitors (PPI)</td>
               <td class="lbl">
                 <a href="doctor.html"
-                  ><button type="button" id="select">Show Drugs</button></a
+                  ><button type="button" id="select1">Show Drugs</button></a
                 >
               </td>
             </tr>
           </table>
         </div>
-        <br />
 
         <h2 id="sampletext2">Alternatives</h2>
         <div id="displaytable2" class="placeholder">
@@ -93,7 +91,19 @@
             <tr align="center">
               <td class="lbl">H2 Receptor Antagonists (H2RA)</td>
               <td class="lbl">
-                <button type="button" id="select">Show Drugs</button>
+                <button type="button" id="select2">Show Drugs</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <h2 id="sampletext3">Not Recommended</h2>
+        <div id="displaytable3" class="placeholder">
+          <table id="displaytablee3">
+            <tr align="center">
+              <td class="lbl">Prostaglandins Analogues (PG)</td>
+              <td class="lbl">
+                <button type="button" id="select3">Show Drugs</button>
               </td>
             </tr>
           </table>
@@ -203,6 +213,12 @@
 
             var tablewrap2 = document.getElementById("displaytable2");
             tablewrap2.classList.toggle("hidden");
+
+            var headertext3 = document.getElementById("sampletext3");
+            headertext3.classList.toggle("hidden");
+
+            var tablewrap3 = document.getElementById("displaytable3");
+            tablewrap3.classList.toggle("hidden");
           }
           window.onload = myFunction();
         </script>
