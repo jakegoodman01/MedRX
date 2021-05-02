@@ -54,7 +54,7 @@
       <div class="main">
         <form>
           <label for="search1">Search by Indication:</label><br />
-          <input type="text" id="search1" name="search1" />
+          <input type="text" id="search1" name="search1" value="GERD" />
           <button
             type="button"
             id="check"
@@ -78,7 +78,7 @@
             <tr align="center">
               <td class="lbl">Proton-Pump Inhibitors (PPI)</td>
               <td class="lbl">
-                <a href="doctor2.html"
+                <a href="doctor.html"
                   ><button type="button" id="select">Show Drugs</button></a
                 >
               </td>
@@ -97,6 +97,94 @@
               </td>
             </tr>
           </table>
+        </div>
+
+        <div id="recommended">
+          <a href="doctor3.html"><div class="drug">Pantoprazole</div></a>
+          <div class="drug">Rabeprazole</div>
+          <div class="drug">Esomeprazole</div>
+          <div class="drug">Omeprazole</div>
+          <div class="drug">Lansoprazole</div>
+        </div>
+
+        <div id="order">
+          <div
+            class="drug"
+            style="
+              text-align: left;
+              font-size: 30px;
+              margin-top: 5px;
+              background: lightgray;
+              color: black;
+            "
+          >
+            Drug Order Details
+          </div>
+          <p style="font-weight: bold; font-size: 24px; text-align: center">
+            Selected Indication: GERD
+          </p>
+          <p style="font-weight: bold; font-size: 24px; margin-left: 10px">
+            Drug: Pantoprazole
+          </p>
+          <form style="margin: 0; padding: 0px">
+            Strength:
+            <input
+              style="display: inline; margin-left: 60px"
+              type="text"
+              value="40mg"
+            />
+          </form>
+          <form style="margin: 0; padding: 0px">
+            Route:
+            <input
+              style="display: inline; margin-left: 80px"
+              type="text"
+              value="Oral"
+            />
+          </form>
+          <form style="margin: 0; padding: 0px">
+            Frequency:
+            <input
+              style="display: inline; margin-left: 46px"
+              type="text"
+              value="Once daily"
+            />
+          </form>
+          <form style="margin: 0; padding: 0px">
+            Duration:
+            <input
+              style="display: inline; margin-left: 61px"
+              type="text"
+              value="30 days"
+            />
+          </form>
+          <form style="margin: 0; padding: 0px">
+            Dispense Qty:
+            <input
+              style="display: inline; margin-left: 27px"
+              type="text"
+              value="30 tablets"
+            />
+          </form>
+          <form style="margin: 0; padding: 0px">
+            # of Refills:
+            <input
+              style="display: inline; margin-left: 48px"
+              type="text"
+              value="0"
+            />
+          </form>
+          <div id="directions">
+            Directions:
+            <textarea rows="4" cols="35">Take 1 tablet once daily</textarea>
+            <button
+              type="button"
+              id="select"
+              style="position: absolute; bottom: -40px; right: 100px"
+            >
+              Confirm
+            </button>
+          </div>
         </div>
 
         <script>

@@ -81,10 +81,11 @@
 
 .placeholder {
 }
+
 #displaytable {
   padding: 20px;
   width: 35%;
-  border: 6px solid rgb(58, 224, 58);
+  border: 6px solid green;
   font-size: 22px;
   background: white;
 }
@@ -94,4 +95,47 @@
   border: 6px solid rgb(249, 252, 63);
   font-size: 22px;
   background: white;
+}
+#recommended {
+  position: absolute;
+  top: 200px;
+  right: 300px;
+  width: 300px;
+  border: 2px solid black;
+  font-size: 30px;
+}
+
+.drug {
+  background: green;
+  border: 2px solid black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+#order {
+  position: absolute;
+  bottom: 200px;
+  right: 100px;
+  width: 600px;
+  border: 2px solid black;
+}
+
+#order,
+form {
+  padding-left: 10px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+}
+
+#directions {
+  position: absolute;
+  bottom: 70px;
+  right: 20px;
+  width: 275px;
+}
+
+div:hover {
+  opacity: 1;
 }
